@@ -1,0 +1,19 @@
+body {
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: normal;
+    font-size: 150%;
+    color: #1E90FF;
+    background-color: #FFFFF0;
+    padding: 3em 10em 3em 10em;
+}
+
+summary {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top: 0.5px solid #AEA1A1;
+}
+
+summary::marker {
+    content: '';
+}
