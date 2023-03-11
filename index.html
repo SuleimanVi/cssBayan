@@ -6,34 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="bayan.css" rel="stylesheet" type="text/css">
+    <link href="adaptive.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <header class="header">
+    <div class="wrapper">
+      <header class="header">
         <h1>CSS Bayan</h1>
-    </header>
-    <main class="main">
+      </header>
+      <main class="main">
         <div class="accordion">
-            <details class="item">
+            <details class="item" open>
                 <summary class="title">Me learning CSS and HTML and me learning JavaScript.<img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABYElEQVR4nO2aTU7DMBBG3yUapeVI4Tj8HACuVRawAsGGLDgHLQtYDTKaSFHEj504zkTMkyJV6tSapy+NXU3BcZyxnAJ74A2Qha+j9tKkSlwbaF5+uK5SkggfeAfOgC3LswXOtSeJTeZGi4OENS60t3Cb/clRi2vsUWtvh5ji7l60isT25yKFEE/EGOKJGEM8EWOIJzLgFngEKvJTAU/AXYlEHvT9NrNMWKvVte8n9BdduAGeteYl0zF/uGY9ob+kwpwyKRKzfNlzyKRKzPbUmiIzRmLWx+8YmbESs+8jKTJTJIpsiDEyUyWK7ey/yeSQKHpE+U4ml0Txs1Z/l24Hr6u1HRo3vRRyJLHo6beTySWx6DG+yny4FP89YgzxRIwhnogx5N8lctBCCyO3ISfa2ysR7LU4zOyscZkyemt6w9Aws9uxPDuV+EgZhqIjYFn7eLqj0Qi74egq/zDgOA5ffAJcYngw3j8gmwAAAABJRU5ErkJggg=="></summary>
-                <div class="images"><img class="one" width="70%" height="70%" src="one.jpg" alt="one"></div>
+                <div class="images"><img class="img" src="one.jpg" alt="one"></div>
             </details>
-            <details>
-                <summary class="title">HTML/CSS.<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABYElEQVR4nO2aTU7DMBBG3yUapeVI4Tj8HACuVRawAsGGLDgHLQtYDTKaSFHEj504zkTMkyJV6tSapy+NXU3BcZyxnAJ74A2Qha+j9tKkSlwbaF5+uK5SkggfeAfOgC3LswXOtSeJTeZGi4OENS60t3Cb/clRi2vsUWtvh5ji7l60isT25yKFEE/EGOKJGEM8EWOIJzLgFngEKvJTAU/AXYlEHvT9NrNMWKvVte8n9BdduAGeteYl0zF/uGY9ob+kwpwyKRKzfNlzyKRKzPbUmiIzRmLWx+8YmbESs+8jKTJTJIpsiDEyUyWK7ey/yeSQKHpE+U4ml0Txs1Z/l24Hr6u1HRo3vRRyJLHo6beTySWx6DG+yny4FP89YgzxRIwhnogx5N8lctBCCyO3ISfa2ysR7LU4zOyscZkyemt6w9Aws9uxPDuV+EgZhqIjYFn7eLqj0Qi74egq/zDgOA5ffAJcYngw3j8gmwAAAABJRU5ErkJggg=="></summary>
-                <div class="images"><img class="two"  width="70%" height="70%" src="two.jpeg" alt="two"></div>
+            <details class="item">
+                <summary class="title">HTML/CSS.<img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABYElEQVR4nO2aTU7DMBBG3yUapeVI4Tj8HACuVRawAsGGLDgHLQtYDTKaSFHEj504zkTMkyJV6tSapy+NXU3BcZyxnAJ74A2Qha+j9tKkSlwbaF5+uK5SkggfeAfOgC3LswXOtSeJTeZGi4OENS60t3Cb/clRi2vsUWtvh5ji7l60isT25yKFEE/EGOKJGEM8EWOIJzLgFngEKvJTAU/AXYlEHvT9NrNMWKvVte8n9BdduAGeteYl0zF/uGY9ob+kwpwyKRKzfNlzyKRKzPbUmiIzRmLWx+8YmbESs+8jKTJTJIpsiDEyUyWK7ey/yeSQKHpE+U4ml0Txs1Z/l24Hr6u1HRo3vRRyJLHo6beTySWx6DG+yny4FP89YgzxRIwhnogx5N8lctBCCyO3ISfa2ysR7LU4zOyscZkyemt6w9Aws9uxPDuV+EgZhqIjYFn7eLqj0Qi74egq/zDgOA5ffAJcYngw3j8gmwAAAABJRU5ErkJggg=="></summary>
+                <div class="images"><img class="img" src="two.jpeg" alt="two"></div>
             </details>
-            <details>
-                <summary class="title">Hackers in movies and hackers in real life.<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABYElEQVR4nO2aTU7DMBBG3yUapeVI4Tj8HACuVRawAsGGLDgHLQtYDTKaSFHEj504zkTMkyJV6tSapy+NXU3BcZyxnAJ74A2Qha+j9tKkSlwbaF5+uK5SkggfeAfOgC3LswXOtSeJTeZGi4OENS60t3Cb/clRi2vsUWtvh5ji7l60isT25yKFEE/EGOKJGEM8EWOIJzLgFngEKvJTAU/AXYlEHvT9NrNMWKvVte8n9BdduAGeteYl0zF/uGY9ob+kwpwyKRKzfNlzyKRKzPbUmiIzRmLWx+8YmbESs+8jKTJTJIpsiDEyUyWK7ey/yeSQKHpE+U4ml0Txs1Z/l24Hr6u1HRo3vRRyJLHo6beTySWx6DG+yny4FP89YgzxRIwhnogx5N8lctBCCyO3ISfa2ysR7LU4zOyscZkyemt6w9Aws9uxPDuV+EgZhqIjYFn7eLqj0Qi74egq/zDgOA5ffAJcYngw3j8gmwAAAABJRU5ErkJggg=="></summary>
-                <div class="images"><img class="three"  width="70%" height="70%" src="three.jpeg" alt="three"></div>
+            <details class="item">
+                <summary class="title">Hackers in movies and hackers in real life.<img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABYElEQVR4nO2aTU7DMBBG3yUapeVI4Tj8HACuVRawAsGGLDgHLQtYDTKaSFHEj504zkTMkyJV6tSapy+NXU3BcZyxnAJ74A2Qha+j9tKkSlwbaF5+uK5SkggfeAfOgC3LswXOtSeJTeZGi4OENS60t3Cb/clRi2vsUWtvh5ji7l60isT25yKFEE/EGOKJGEM8EWOIJzLgFngEKvJTAU/AXYlEHvT9NrNMWKvVte8n9BdduAGeteYl0zF/uGY9ob+kwpwyKRKzfNlzyKRKzPbUmiIzRmLWx+8YmbESs+8jKTJTJIpsiDEyUyWK7ey/yeSQKHpE+U4ml0Txs1Z/l24Hr6u1HRo3vRRyJLHo6beTySWx6DG+yny4FP89YgzxRIwhnogx5N8lctBCCyO3ISfa2ysR7LU4zOyscZkyemt6w9Aws9uxPDuV+EgZhqIjYFn7eLqj0Qi74egq/zDgOA5ffAJcYngw3j8gmwAAAABJRU5ErkJggg=="></summary>
+                <div class="images"><img class="img"  src="three.jpeg" alt="three"></div>
             </details>
-            <details>
-                <summary class="title">Coder's world.<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABYElEQVR4nO2aTU7DMBBG3yUapeVI4Tj8HACuVRawAsGGLDgHLQtYDTKaSFHEj504zkTMkyJV6tSapy+NXU3BcZyxnAJ74A2Qha+j9tKkSlwbaF5+uK5SkggfeAfOgC3LswXOtSeJTeZGi4OENS60t3Cb/clRi2vsUWtvh5ji7l60isT25yKFEE/EGOKJGEM8EWOIJzLgFngEKvJTAU/AXYlEHvT9NrNMWKvVte8n9BdduAGeteYl0zF/uGY9ob+kwpwyKRKzfNlzyKRKzPbUmiIzRmLWx+8YmbESs+8jKTJTJIpsiDEyUyWK7ey/yeSQKHpE+U4ml0Txs1Z/l24Hr6u1HRo3vRRyJLHo6beTySWx6DG+yny4FP89YgzxRIwhnogx5N8lctBCCyO3ISfa2ysR7LU4zOyscZkyemt6w9Aws9uxPDuV+EgZhqIjYFn7eLqj0Qi74egq/zDgOA5ffAJcYngw3j8gmwAAAABJRU5ErkJggg=="></summary>
-                <div class="images"><img class="four"  width="70%" height="70%" src="four.jpeg" alt="four"></div>
+            <details class="item">
+                <summary class="title">Coder's world.<img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABYElEQVR4nO2aTU7DMBBG3yUapeVI4Tj8HACuVRawAsGGLDgHLQtYDTKaSFHEj504zkTMkyJV6tSapy+NXU3BcZyxnAJ74A2Qha+j9tKkSlwbaF5+uK5SkggfeAfOgC3LswXOtSeJTeZGi4OENS60t3Cb/clRi2vsUWtvh5ji7l60isT25yKFEE/EGOKJGEM8EWOIJzLgFngEKvJTAU/AXYlEHvT9NrNMWKvVte8n9BdduAGeteYl0zF/uGY9ob+kwpwyKRKzfNlzyKRKzPbUmiIzRmLWx+8YmbESs+8jKTJTJIpsiDEyUyWK7ey/yeSQKHpE+U4ml0Txs1Z/l24Hr6u1HRo3vRRyJLHo6beTySWx6DG+yny4FP89YgzxRIwhnogx5N8lctBCCyO3ISfa2ysR7LU4zOyscZkyemt6w9Aws9uxPDuV+EgZhqIjYFn7eLqj0Qi74egq/zDgOA5ffAJcYngw3j8gmwAAAABJRU5ErkJggg=="></summary>
+                <div class="images"><img class="img" src="four.jpeg" alt="four"></div>
             </details>
-            <details>
-                <summary class="title">Frontend? Backend? Weekend! <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABYElEQVR4nO2aTU7DMBBG3yUapeVI4Tj8HACuVRawAsGGLDgHLQtYDTKaSFHEj504zkTMkyJV6tSapy+NXU3BcZyxnAJ74A2Qha+j9tKkSlwbaF5+uK5SkggfeAfOgC3LswXOtSeJTeZGi4OENS60t3Cb/clRi2vsUWtvh5ji7l60isT25yKFEE/EGOKJGEM8EWOIJzLgFngEKvJTAU/AXYlEHvT9NrNMWKvVte8n9BdduAGeteYl0zF/uGY9ob+kwpwyKRKzfNlzyKRKzPbUmiIzRmLWx+8YmbESs+8jKTJTJIpsiDEyUyWK7ey/yeSQKHpE+U4ml0Txs1Z/l24Hr6u1HRo3vRRyJLHo6beTySWx6DG+yny4FP89YgzxRIwhnogx5N8lctBCCyO3ISfa2ysR7LU4zOyscZkyemt6w9Aws9uxPDuV+EgZhqIjYFn7eLqj0Qi74egq/zDgOA5ffAJcYngw3j8gmwAAAABJRU5ErkJggg=="></summary>
-                <div class="images"><img class="five"  width="70%" height="70%" src="five.jpeg" alt="five"></div>
+            <details class="item">
+                <summary class="title">Frontend? Backend? Weekend! <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABYElEQVR4nO2aTU7DMBBG3yUapeVI4Tj8HACuVRawAsGGLDgHLQtYDTKaSFHEj504zkTMkyJV6tSapy+NXU3BcZyxnAJ74A2Qha+j9tKkSlwbaF5+uK5SkggfeAfOgC3LswXOtSeJTeZGi4OENS60t3Cb/clRi2vsUWtvh5ji7l60isT25yKFEE/EGOKJGEM8EWOIJzLgFngEKvJTAU/AXYlEHvT9NrNMWKvVte8n9BdduAGeteYl0zF/uGY9ob+kwpwyKRKzfNlzyKRKzPbUmiIzRmLWx+8YmbESs+8jKTJTJIpsiDEyUyWK7ey/yeSQKHpE+U4ml0Txs1Z/l24Hr6u1HRo3vRRyJLHo6beTySWx6DG+yny4FP89YgzxRIwhnogx5N8lctBCCyO3ISfa2ysR7LU4zOyscZkyemt6w9Aws9uxPDuV+EgZhqIjYFn7eLqj0Qi74egq/zDgOA5ffAJcYngw3j8gmwAAAABJRU5ErkJggg=="></summary>
+                <div class="images"><img class="img" src="five.jpeg" alt="five"></div>
             </details>
         </div>
-    </main>
+      </main>
+    </div>
 </body>
 </html>

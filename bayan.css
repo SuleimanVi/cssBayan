@@ -1,3 +1,11 @@
+.wrapper {
+    cursor: pointer;
+}
+
+header {
+    color: #c24b4b;
+}
+
 body {
 
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -6,12 +14,12 @@ body {
     color: #1E90FF;
     background-color: #FFFFF0;
     padding: 3em 10em 3em 10em;
-    cursor: pointer;
-
 }
 
 .main:hover {
     color: #c24b4b;
+    transition: 0.4s all;
+
 }
 
 summary {
@@ -20,7 +28,12 @@ summary {
     border-top: 0.5px solid #AEA1A1;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
+}
+
+.item[open] {
+    color: #c24b4b;
 }
 
 summary::marker {
@@ -28,7 +41,36 @@ summary::marker {
 }
 
 
+.icon {
+    opacity: 0;
+}
+
+.accordion:hover .icon {
+    display: block;
+    opacity: 100;
+    transition: 0.6s all;
+}
+
+
 .item[open] .icon {
     transform: rotate(180deg);
+}
 
+
+.img {
+    max-height: 0%;
+    max-width: 0%;
+    transition: 0.4s all;
+}
+
+.item[open]>.images>img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 19em;
 }

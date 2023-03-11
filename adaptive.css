@@ -1,0 +1,14 @@
+@media (min-width: 820) and (max-width: 1180px) {
+    header {
+        font-size: 85%;
+    }
+
+    body {
+        font-size: 65%;
+    }
+
+
+}
+
+
+@media (min-width: 320px) and (max-width: 568px) {}
