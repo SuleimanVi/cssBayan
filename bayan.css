@@ -6,14 +6,29 @@ body {
     color: #1E90FF;
     background-color: #FFFFF0;
     padding: 3em 10em 3em 10em;
+    cursor: pointer;
+
+}
+
+.main:hover {
+    color: #c24b4b;
 }
 
 summary {
     padding-top: 1em;
     padding-bottom: 1em;
     border-top: 0.5px solid #AEA1A1;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 summary::marker {
     content: '';
+}
+
+
+.item[open] .icon {
+    transform: rotate(180deg);
+
 }
