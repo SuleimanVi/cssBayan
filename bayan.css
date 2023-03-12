@@ -68,6 +68,8 @@ summary::marker {
     max-width: 100%;
 }
 
+.item:hover+.images {}
+
 .images {
     display: flex;
     justify-content: center;
