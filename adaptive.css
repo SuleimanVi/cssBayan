@@ -1,28 +1,31 @@
-@media (min-width: 820) and (max-width: 1919px) {
-    header {
-        font-size: 85%;
-    }
-
-    body {
-        font-size: 65%;
-    }
-
-
-}
-
-
 @media (min-width: 320px) and (max-width: 819px) {
-    header {
-        font-size: 80%;
-    }
 
     body {
-        font-size: 55%;
-        padding: 2em 5em 2em 5em;
+        font-size: 70%;
+        padding: 2em 1em;
     }
 
     .icon {
-        max-height: 10%;
-        max-width: 10%;
+        max-height: 5%;
+        max-width: 5%;
     }
+
+    .img {
+        max-width: 80%;
+        max-height: 80%;
+    }
+}
+
+@media (min-width: 820px) and (max-width: 1919px) {
+
+    body {
+        font-size: 100%;
+        padding: 2em 6em 2em 6em;
+    }
+
+    .icon {
+        max-height: 2em;
+        max-width: 2em;
+    }
+
 }

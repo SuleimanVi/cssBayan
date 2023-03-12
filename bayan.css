@@ -12,7 +12,7 @@ body {
     font-size: 150%;
     color: #1E90FF;
     background-color: #FFFFF0;
-    padding: 3em 10em 3em 10em;
+    padding: 3em 15em;
 }
 
 .main:hover {
@@ -20,7 +20,7 @@ body {
     transition: 0.8s all;
 }
 
-input[type='checkbox'] {
+input[type='radio'] {
     display: none;
 }
 
@@ -50,7 +50,8 @@ label {
     align-items: center;
     flex-wrap: wrap;
     cursor: pointer;
-    border-top: 0.5px solid #AEA1A1;
+    border-top: 0.05em solid #AEA1A1;
+    padding-bottom: 1em;
 }
 
 label:active {
