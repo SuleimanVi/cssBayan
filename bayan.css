@@ -7,7 +7,6 @@ header {
 }
 
 body {
-
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: normal;
     font-size: 150%;
@@ -19,60 +18,57 @@ body {
 .main:hover {
     color: #c24b4b;
     transition: 0.4s all;
-
 }
 
-summary {
+.hidecontent {
+    display: none;
+}
+
+input:checked+label {
+    color: #c24b4b;
+}
+
+input:checked+label>.icon,
+label:hover .icon {
+    transform: rotate(180deg);
+}
+
+.accordion {
     padding-top: 1em;
     padding-bottom: 1em;
     border-top: 0.5px solid #AEA1A1;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.item[open] {
-    color: #c24b4b;
-}
-
-summary::marker {
-    content: '';
-}
-
-
-.icon {
-    opacity: 0;
+    flex-direction: column;
 }
 
 .accordion:hover .icon {
+    opacity: 1;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+label:active {
+    color: #1E90FF;
+    opacity: 0.5;
+}
+
+label:hover .item[open] {
+    color: #c24b4b;
+}
+
+input:checked+label .content,
+label:hover .content {
     display: block;
-    opacity: 100;
     transition: 0.6s all;
 }
 
-
-.item[open] .icon {
-    transform: rotate(180deg);
-}
-
-
-.img {
-    max-height: 0%;
-    max-width: 0%;
+.icon {
+    opacity: 0;
     transition: 0.4s all;
-}
-
-.item[open]>.images>img {
-    max-height: 100%;
-    max-width: 100%;
-}
-
-.item:hover+.images {}
-
-.images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 19em;
 }
