@@ -1,0 +1,87 @@
+.wrapper {
+    cursor: pointer;
+}
+
+header {
+    color: #c24b4b;
+}
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: normal;
+    font-size: 150%;
+    color: #1E90FF;
+    background-color: #FFFFF0;
+    padding: 3em 15em;
+}
+
+.main:hover {
+    color: #c24b4b;
+    transition: 0.8s all;
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+input:checked+label {
+    color: #c24b4b;
+}
+
+input:checked+label>.icon,
+label:hover .icon {
+    transform: rotate(180deg);
+}
+
+.accordion {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion:hover .icon {
+    opacity: 1;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    border-top: 0.05em solid #AEA1A1;
+    padding-bottom: 1em;
+}
+
+label:active {
+    color: #1E90FF;
+    opacity: 0.5;
+}
+
+label:hover .item[open] {
+    color: #c24b4b;
+}
+
+.content {
+    width: 100%;
+    height: 0;
+}
+
+input:checked+label .content,
+label:hover .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    transition: 0.6s all;
+}
+
+.icon {
+    opacity: 0;
+    transition: 0.6s all;
+}
+
+.img {
+    max-height: 100%;
+}
